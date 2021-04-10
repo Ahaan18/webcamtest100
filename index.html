@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+<style>
+    #camera, #result{
+        width:320px;
+        height:240px;
+        border: 1px solid white;
+    }
+    body{
+        background-color:black;
+        color:white;
+    }
+</style>
+   </head>
+   <body>
+       <a download='selfie-test' href='' id='downloadimg'></a>
+    <center>
+        <h3>Camera:</h3>
+        <div id='camera'></div>
+        <br>
+        <button onclick='take()'>Take snapshot</button>
+        <br>
+        <h3>Snapshot Result:</h3>
+        <div id='result'></div>
+    </center>
+    <script src='mail.js'></script>
+</body>
+</html>
